@@ -4,22 +4,57 @@
 <head>
   <title>Trello clone with Bootstrap</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
-  <div class="container">
-    <div class="header">
+  <div class="container-fluid">
+    <!-- HEADER -->
+    <div class="row header bg-primary-dark">
+      <!-- LEFT MENU -->
+      <div class="header-menu col-sm-3 pull-left vmiddle">
+        <a class="header-btn pull-left">
+          <img src="img/trello-icon.png" height="20"/>
+          <span class="header-btn-txt">Boards</span>
+        </a>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">
+              <span class="glyphicon glyphicon-search"></span>
+            </span>
+          </div>
+      </div>
+      <!-- LOGO -->
+      <a class="header-logo col-sm-6 text-center vmiddle">
+        <img src="img/trello-logo-white.svg" width="80"/>
+      </a>
+      <!-- RIGHT MENU -->
+      <div class="header-user col-sm-3 pull-right vmiddle">
+        <a class="header-notifications header-btn pull-right" href="#">
+          <span class="glyphicon glyphicon-bell"></span>
+        </a>
+        <a class="header-member header-btn pull-right" href="#">
+          <!-- <img class="member-avatar glyphicon glyphicon-user" src="#"/> -->
+          <span class="glyphicon glyphicon-user"></span>
+          <span class="header-btn-txt">Name Surname</span>
+        </a>
+        <a class="header-btn pull-right" href="#">
+          <span class="glyphicon glyphicon-plus"></span>
+        </a>
+      </div>
     </div>
 
-    <div class="board-wrapper">
-      <div class="board-header">
-      </div>
-      <div class="board-canvas">
+    <!-- BOARD CONTENT -->
+    <div class="row board-wrapper">
+      <div class="board-canvas col-sm-9">
+        <div class="board-header">
+        </div>
         <!-- LIST -->
         <div class="list-wrapper">
           <div class="list-header">
             <h3>Panel title</h3>
-            <a class="list-header-menu-icon" href="#">_</a>
+            <a class="caret" href="#">_</a>
           </div>
           <div class="list-cards">
             <div class="list-card">
@@ -39,8 +74,10 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div><!-- board canvas -->
+      <div class="menu col-sm-3">
+      </div><!-- menu -->
+    </div><!-- board wrapper -->
   </div>
 
 </body>

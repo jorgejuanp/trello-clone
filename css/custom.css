@@ -1,0 +1,29 @@
+.bg-primary-dark {
+  background-color: #143758;
+}
+
+.bg-second {
+  background-color: #0D6D8D
+}
+
+.header {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.vmiddle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-btn {
+  background: rgba(255,255,255,.2) 100%;
+  padding: 7px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.header-btn-txt {
+  margin-left: 5px;
+}
