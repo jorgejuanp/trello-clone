@@ -45,10 +45,21 @@
 }
 
 .list-header {
-  padding: 10px 0;
+  font-size: 2em;
+  padding: 5px 0 45px 0;
 }
+
 .list-card {
   border-radius: 5px;
-  background-color: #fff;
-  margin: 0 0 8px 0;
+  background-color: #EFE6D8;
+  margin: 0 0 10px 0;
+  padding: 10px 0;
+}
+
+.list-card-title {
+  margin-bottom: 10px;
+}
+
+.badges span {
+  margin-right: 5px;
 }
