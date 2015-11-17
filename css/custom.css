@@ -1,5 +1,9 @@
 .bg-primary-dark {
-  background-color: #143758;
+  background-color: #FF3234;
+}
+
+.header a {
+  color: #fff;
 }
 
 .bg-second {
@@ -8,7 +12,6 @@
 
 .header {
   height: 50px;
-  vertical-align: middle;
 }
 
 .vmiddle {
@@ -18,7 +21,7 @@
 }
 
 .header-btn {
-  background: rgba(255,255,255,.2) 100%;
+  background: rgba(255,255,255,.3) 100%;
   padding: 7px 12px;
   margin-right: 10px;
   border-radius: 4px;
@@ -26,4 +29,26 @@
 
 .header-btn-txt {
   margin-left: 5px;
+  color: #fff;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.list-wrapper {
+  border-radius: 10px;
+  background-color: #C7BA9F;
+}
+
+.list-header {
+  padding: 10px 0;
+}
+.list-card {
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 0 8px 0;
 }

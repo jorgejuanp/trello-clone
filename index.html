@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- http://www.colourlovers.com/palette/3932463/strike_back -->
 <html>
 <head>
   <title>Trello clone with Bootstrap</title>
@@ -15,15 +15,15 @@
       <!-- LEFT MENU -->
       <div class="header-menu col-sm-3 pull-left vmiddle">
         <a class="header-btn pull-left">
-          <img src="img/trello-icon.png" height="20"/>
+          <img src="img/trello-icon-white.png" height="20"/>
           <span class="header-btn-txt">Boards</span>
         </a>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
-            <span class="input-group-addon" id="basic-addon2">
-              <span class="glyphicon glyphicon-search"></span>
-            </span>
-          </div>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">
+            <span class="glyphicon glyphicon-search"></span>
+          </span>
+        </div>
       </div>
       <!-- LOGO -->
       <a class="header-logo col-sm-6 text-center vmiddle">
@@ -43,35 +43,115 @@
           <span class="glyphicon glyphicon-plus"></span>
         </a>
       </div>
-    </div>
+    </div><!-- header -->
 
     <!-- BOARD CONTENT -->
     <div class="row board-wrapper">
-      <div class="board-canvas col-sm-9">
-        <div class="board-header">
+      <div class="row board-canvas col-sm-9">
+        <div class="board-header col-sm-12 pull-left">
+          <h2>Board title</h2>
+          <div class="board-header-btns pull-left">
+            <a href="#" class="board-header-btn">Team name</a>
+            <a href="#">
+              <span class="glyphicon glyphicon-star-empty"></span>
+            </a>
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span>
+              <span class="btn-txt">Team Visible</span>
+            </a>
+          </div>
         </div>
         <!-- LIST -->
-        <div class="list-wrapper">
+        <div class="list-wrapper col-sm-4">
           <div class="list-header">
-            <h3>Panel title</h3>
-            <a class="caret" href="#">_</a>
+            <h5 class="pull-left vmiddle">Panel title</h5>
+            <a class="caret pull-right vmiddle" href="#"></a>
           </div>
           <div class="list-cards">
+            <!-- LIST CARD -->
             <div class="list-card">
               <div class="list-card-labels">
                 <span class="card-label card-label-green"></span>
               </div>
-              <a class="list-card-title" href="#">Card title</a>
+              <a class="list-card-title" href="#">iOS style guide development</a>
               <div class="badges">
-                <div class="badge">_</div>
-                <div class="badge">_</div>
-                <div class="badge">_</div>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon glyphicon-paperclip"></span>
+                <span class="glyphicon glyphicon-ok-circle">2/5</span>
+                <span class="glyphicon glyphicon-comment">3</span>
               </div>
               <div class="list-card-members">
-                <div class="member">_</div>
-                <div class="member">_</div>
+                <div class="member pull-left">
+                  <img class="profile-img" href="#" src="img/profile-01.jpg"/>
+                </div>
+                <div class="member">
+                  <img class="profile-img" href="#" src="img/profile-02.jpg"/>
+                </div>
               </div>
-            </div>
+            </div><!-- list card -->
+            <!-- LIST CARD -->
+            <div class="list-card">
+              <div class="list-card-labels">
+                <span class="card-label card-label-green"></span>
+              </div>
+              <a class="list-card-title" href="#">iOS style guide development</a>
+              <div class="badges">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon glyphicon-paperclip"></span>
+                <span class="glyphicon glyphicon-ok-circle">2/5</span>
+                <span class="glyphicon glyphicon-comment">3</span>
+              </div>
+              <div class="list-card-members">
+                <div class="member pull-left">
+                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
+                </div>
+                <div class="member">
+                  <img class="profile-img" href="#" src="img/profile-04.png"/>
+                </div>
+                <div class="member">
+                  <img class="profile-img" href="#" src="img/profile-05.jpg"/>
+                </div>
+              </div>
+            </div><!-- list card -->
+            <!-- LIST CARD -->
+            <div class="list-card">
+              <div class="list-card-labels">
+                <span class="card-label card-label-green"></span>
+              </div>
+              <a class="list-card-title" href="#">iOS style guide development</a>
+              <div class="badges">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon glyphicon-paperclip"></span>
+                <span class="glyphicon glyphicon-ok-circle">2/5</span>
+                <span class="glyphicon glyphicon-comment">3</span>
+              </div>
+              <div class="list-card-members">
+                <div class="member pull-left">
+                  <img class="profile-img" href="#" src="img/profile-06.jpg"/>
+                </div>
+              </div>
+            </div><!-- list card -->
+            <!-- LIST CARD -->
+            <div class="list-card">
+              <div class="list-card-labels">
+                <span class="card-label card-label-green"></span>
+              </div>
+              <a class="list-card-title" href="#">iOS style guide development</a>
+              <div class="badges">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon glyphicon-paperclip"></span>
+                <span class="glyphicon glyphicon-ok-circle">2/5</span>
+                <span class="glyphicon glyphicon-comment">3</span>
+              </div>
+              <div class="list-card-members">
+                <div class="member pull-left">
+                  <img class="profile-img" href="#" src="img/profile-07.jpg"/>
+                </div>
+                <div class="member">
+                  <img class="profile-img" href="#" src="img/profile-08.png"/>
+                </div>
+              </div>
+            </div><!-- list card -->
           </div>
         </div>
       </div><!-- board canvas -->
