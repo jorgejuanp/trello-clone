@@ -14,10 +14,18 @@
   height: 50px;
 }
 
+.board-header {
+  margin-bottom: 10px;
+}
+
 .vmiddle {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.board-header * {
+  float: left;
 }
 
 .header-btn {
@@ -32,6 +40,16 @@
   color: #fff;
 }
 
+#board-header-list {
+  list-style: none;
+  margin-top: 25px;
+  padding-left: 0px;
+}
+
+#board-header-list a {
+  margin-left: 20px;
+}
+
 .profile-img {
   width: 30px;
   height: 30px;
@@ -39,27 +57,80 @@
   border-radius: 5px;
 }
 
-.list-wrapper {
+.list-set {
   border-radius: 10px;
   background-color: #C7BA9F;
+  width: 270px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .list-header {
-  font-size: 2em;
-  padding: 5px 0 45px 0;
+  font-size: 1em;
+}
+
+.list-cards {
+  margin: 0px;
 }
 
 .list-card {
   border-radius: 5px;
   background-color: #EFE6D8;
-  margin: 0 0 10px 0;
-  padding: 10px 0;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.inner {
+  padding: 0px;
+}
+
+.list-card * {
+  float: left;
+}
+
+.list-set {
+  margin-right: 10px;
+}
+
+.list-set:first-child {
+  float: left;
 }
 
 .list-card-title {
   margin-bottom: 10px;
+  /*margin-left: 8px;*/
+  color: #4d4d4d;
 }
 
-.badges span {
-  margin-right: 5px;
+.list-card-badges span {
+  margin: 0 0 0 8px;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.card-label {
+  border-radius: 5px;
+	width: 42px;
+	height: 8px;
+  float: left;
+  margin: 5px 5px 5px 0;
+  padding: 0;
+}
+
+.card-label-green {
+	background: #51e898;
+}
+
+.card-label-blue {
+	background: #00c2e0;
+}
+
+.card-label-red {
+	background: #eb5a46;
+}
+
+.list-title {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
 }

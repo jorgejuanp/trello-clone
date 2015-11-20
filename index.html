@@ -13,7 +13,7 @@
     <!-- HEADER -->
     <div class="row header bg-primary-dark">
       <!-- LEFT MENU -->
-      <div class="header-menu col-sm-3 pull-left vmiddle">
+      <div class="header-menu col-sm-5 pull-left vmiddle">
         <a class="header-btn pull-left">
           <img src="img/trello-icon-white.png" height="20"/>
           <span class="header-btn-txt">Boards</span>
@@ -26,11 +26,11 @@
         </div>
       </div>
       <!-- LOGO -->
-      <a class="header-logo col-sm-6 text-center vmiddle">
+      <a class="header-logo col-sm-2 text-center vmiddle">
         <img src="img/trello-logo-white.svg" width="80"/>
       </a>
       <!-- RIGHT MENU -->
-      <div class="header-user col-sm-3 pull-right vmiddle">
+      <div class="header-user col-sm-5 pull-right vmiddle">
         <a class="header-notifications header-btn pull-right" href="#">
           <span class="glyphicon glyphicon-bell"></span>
         </a>
@@ -45,255 +45,292 @@
       </div>
     </div><!-- header -->
 
-    <!-- BOARD CONTENT -->
-    <div class="row board-wrapper">
-      <div class="row board-canvas col-sm-9">
-        <div class="board-header col-sm-12 pull-left">
-          <h2>Board title</h2>
-          <div class="board-header-btns pull-left">
-            <a href="#" class="board-header-btn">Team name</a>
+    <!-- CANVAS -->
+    <div class="row board-wrapper col-sm-9">
+
+      <!-- BOARD TITLE -->
+      <div class="board-header col-sm-12">
+        <h3>Board title</h3>
+        <ul id="board-header-list">
+          <li><a href="#" class="board-header-btn">Team name</a></li>
+          <li>
             <a href="#">
               <span class="glyphicon glyphicon-star-empty"></span>
             </a>
+          </li>
+          <li>
             <a href="#">
               <span class="glyphicon glyphicon-user"></span>
               <span class="btn-txt">Team Visible</span>
             </a>
-          </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- LIST SET -->
+      <div class="list-set col-sm-12">
+        <!-- list header -->
+        <div class="list-header">
+          <h4 class="list-title pull-left">Panel title</h4>
+          <a class="pull-right" href="#">
+            <span class="glyphicon glyphicon-collapse-down"></span>
+          </a>
         </div>
 
-        <!-- LIST SET 01 -->
-        <div class="list-wrapper col-sm-4">
-          <div class="list-header">
-            <h4 class="pull-left">Panel title</h4>
-            <a class="pull-right" href="#">
-              <span class="glyphicon glyphicon-collapse-down"></span>
-            </a>
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
           </div>
-          <div class="list-cards">
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-paperclip"></span>
-                <span class="glyphicon glyphicon-comment">3</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-01.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-02.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-ok-circle">2/5</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-04.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-05.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-paperclip"></span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-06.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-07.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
           </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-01.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-02.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+      </div><!-- list set -->
+
+
+      <!--
+
+      BORRAR ESTO
+
+      -->
+      <!-- LIST SET -->
+      <div class="list-set col-sm-12">
+        <!-- list header -->
+        <div class="list-header">
+          <h4 class="list-title pull-left">Panel title</h4>
+          <a class="pull-right" href="#">
+            <span class="glyphicon glyphicon-collapse-down"></span>
+          </a>
         </div>
 
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
+          </div>
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
+          </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-01.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
 
-        <!-- LIST SET 01 -->
-        <div class="list-wrapper col-sm-4">
-          <div class="list-header">
-            <h4 class="pull-left">Panel title</h4>
-            <a class="pull-right" href="#">
-              <span class="glyphicon glyphicon-collapse-down"></span>
-            </a>
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
           </div>
-          <div class="list-cards">
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-ok-circle">2/5</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-paperclip"></span>
-                <span class="glyphicon glyphicon-comment">3</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-01.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-02.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-ok-circle">2/5</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-paperclip"></span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-06.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-07.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-ok-circle">2/5</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
           </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-05.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-06.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-07.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
+          </div>
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
+          </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-03.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-04.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
+          </div>
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
+          </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-07.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+      </div><!-- list set -->
+
+
+
+      <!-- LIST SET -->
+      <div class="list-set col-sm-12">
+        <!-- list header -->
+        <div class="list-header">
+          <h4 class="list-title pull-left">Panel title</h4>
+          <a class="pull-right" href="#">
+            <span class="glyphicon glyphicon-collapse-down"></span>
+          </a>
         </div>
 
-
-        <!-- LIST SET 01 -->
-        <div class="list-wrapper col-sm-4">
-          <div class="list-header">
-            <h4 class="pull-left">Panel title</h4>
-            <a class="pull-right" href="#">
-              <span class="glyphicon glyphicon-collapse-down"></span>
-            </a>
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
           </div>
-          <div class="list-cards">
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-paperclip"></span>
-                <span class="glyphicon glyphicon-comment">3</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-01.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-02.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
-            <!-- LIST CARD -->
-            <div class="row list-card">
-              <div class="list-card-labels">
-                <span class="card-label card-label-green"></span>
-              </div>
-              <a class="list-card-title pull-left col-sm-12" href="#">iOS style guide development</a>
-              <div class="badges col-sm-5">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <span class="glyphicon glyphicon-ok-circle">2/5</span>
-              </div>
-              <div class="list-card-members col-sm-7">
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-03.jpg"/>
-                </div>
-                <div class="pull-right">
-                  <img class="profile-img" href="#" src="img/profile-04.jpg"/>
-                </div>
-              </div>
-            </div><!-- list card -->
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
           </div>
-        </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-08.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-05.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
+          </div>
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
+          </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-07.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-06.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+
+        <!-- list card -->
+        <div class="col-sm-12 list-card">
+          <div class="col-sm-12 inner">
+            <div class="card-label card-label-green"></div>
+            <div class="card-label card-label-blue"></div>
+          </div>
+          <div class="col-sm-12 inner">
+            <a class="list-card-title" href="#">iOS style guide development</a>
+          </div>
+          <div class="col-sm-12 inner">
+            <div class="list-card-badges pull-left">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <span class="glyphicon glyphicon-paperclip"></span>
+              <span class="glyphicon glyphicon-comment">3</span>
+              <span class="glyphicon glyphicon-ok-circle">2/5</span>
+            </div>
+            <div class="list-card-members pull-right">
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-03.jpg"/>
+              </div>
+              <div class="pull-right">
+                <img class="profile-img" href="#" src="img/profile-04.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div><!-- list card -->
+      </div><!-- list set -->
+      <!--
+
+      BORRAR ESTO
+
+      -->
 
 
 
-      </div><!-- board canvas -->
-      <div class="menu col-sm-3">
-      </div><!-- menu -->
-    </div><!-- board wrapper -->
-  </div>
+
+    <div class="menu col-sm-3">
+    </div><!-- menu -->
+  </div><!-- board wrapper -->
+</div>
 
 </body>
 </html>
